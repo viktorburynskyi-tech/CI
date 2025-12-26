@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir -r requirements.txt || true
 EXPOSE 8000
-CMD ["sh", "-c","uvicorn main:app --hostc0.0.0.0c--port $PORT"]
+CMD ["sh", "-c","uvicorn main:app --host 0.0.0.0c--port $PORT"]
