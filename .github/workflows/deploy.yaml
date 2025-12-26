@@ -19,4 +19,4 @@ jobs:
       - name: Build Docker image
         run: docker build -t billymade7/pythonapi:latest .
       - name: push docker image
-        run: docker build -t billymade7/pythonapi:latest
+        run: docker push billymade7/pythonapi:latest
